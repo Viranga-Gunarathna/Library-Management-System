@@ -3,7 +3,7 @@ import logo from './logo.svg';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import Books from './components/Books';
 import Authors from './components/Authors';
 
@@ -15,10 +15,6 @@ function App() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
-
-    // return () => {
-    //   window.removeEventListener('scroll', handleScroll);
-    // };
   }, []);
 
   return (
@@ -30,7 +26,7 @@ function App() {
         <Row className="nav-bar text-center position-fixed d-flex justify-content-center align-items-center w-100">
           <h1>My Library</h1>
         </Row>
-        {/* <img src="/img/library.webp" className="w-100" alt="" /> */}
+        
       </Col>
 
       <div className="welcome-trans"></div>
